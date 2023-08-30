@@ -1,89 +1,145 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-	text-decoration:none;	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
-.contener{
-	height: 95vh;
-	background-color: black;
-	
-}
 
-.header{
-	display: flex;
+header {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    background: #000;
+}
 
-    
+.intro {
+    height: 70vh;
+    background: #000;
+}
+
+img {
+    margin-right: auto;
+    color: white;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0 20px;
 
 }
 
-img{
-	margin-right:auto ;
-	color: white;
-}
-
-.nav_link{
-	list-style: none;
-}
-.nav_link li{
-	display: inline-block;
-	padding: 0 20px;
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+    color: white;
 
 }
-.nav_link li a{
-	transition: all 0.3s ease 0s;
-	color: white;
-	
-}
-.nav_link li a:hover{
-	color: #364FA1;
+
+.nav_link li a:hover {
+    color: #364FA1;
 }
 
-.btn{
-	margin-left:20px ;
-	padding: 9px 25px;
-	background-color: #2EA8DF;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	color: white;
+.btn {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #2EA8DF;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
 }
 
 .btn:hover {
-	color:#364FA1;
-	background-color:#ffff;
+    color: #364FA1;
+    background-color: #ffff;
 }
 
-.contener2{
-	background-color: #ffff;
-	display: flex;
-	height: 30px;
+.all_about {
+    padding: 8% 10%;
+    background-color: #364FA1;
+    display: flex;
 }
 
-.all{
-	background-color: #F0F7EE;
-	padding: 100px;
-	display: flex;
+.about,
+.about_img {
+    flex-basis: 50%;
 }
 
-.about , .about_img{
-	flex-basis: 50%;
-	
-	
-}
-.contener3{
-	background-color: black;
-	height: 30px;
+.all_service {
+    padding: 2% 5%;
 }
 
-.ser1{
-	margin: 10px;
-	border: solid 1px goldenrod;
-	color: goldenrod;
+.service_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+    margin-top: 50px;
+}
+
+.service_list div {
+    background-color: #000;
+    border: solid 1px goldenrod;
+    color: goldenrod;
+    padding: 80px;
+    text-align: center;
+}
+
+.contact {
+    background: green;
+    color: #ffff;
+}
+
+.continor2 {
+    padding: 50px 80px;
+
+}
+
+.row {
+    display: flex;
+    padding: 30px 60px;
+    background-color: #364fa154;
+    border-radius: 15px;
+
+}
+
+.content-left {
+    flex-basis: 35%;
+    font-size: 20px;
+}
+
+.content-left p {
+    margin-top: 30px;
+}
+
+.content-right {
+    flex-basis: 60%;
+}
+
+.content-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2EA8DF;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 10px 0;
+    color: #364FA1;
 }
