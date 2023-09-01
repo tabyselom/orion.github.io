@@ -12,27 +12,21 @@
     text-decoration: none;
 }
 
-.hero {
-    height: 100vh;
-}
+
+/*---hero background and stares ----- */
 
 .bg-img {
     background-image: url("src/orion/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
-    /* Used if the image is unavailable */
     height: 100vh;
-    /* You must set a specified height */
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
-    /* Do not repeat the image */
     background-size: cover;
-
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -5;
 }
 
 .stare1 {
@@ -43,6 +37,12 @@
 .stare2 {
     pointer-events: none;
     animation: stares2 40s ease-in;
+}
+
+
+
+.hero {
+    height: 100vh;
 }
 
 
@@ -62,7 +62,7 @@ header {
     opacity: -1;
     animation: slideRight 1s ease forwards;
     cursor: pointer;
-    width: 5%;
+    width: 3%;
 
 
 }
@@ -105,6 +105,11 @@ header {
     animation: slideLeft 3s ease forwards;
 }
 
+.btn:hover {
+    color: #364FA1;
+    background-color: #ffff;
+}
+
 .btn2 {
     margin: 30px 0;
     padding: 9px 25px;
@@ -124,11 +129,6 @@ header {
     color: white;
 }
 
-.btn:hover {
-    color: #364FA1;
-    background-color: #ffff;
-}
-
 /*--------Home--------*/
 
 .home {
@@ -142,7 +142,8 @@ header {
 .home-content {
     margin: auto;
     text-align: center;
-    color: #cccccc;
+    color: white;
+    z-index: 2;
 }
 
 .home-content h1 {
@@ -159,21 +160,30 @@ header {
 
 
 
-
-
-
 /*-----About------*/
-.all_about {
-    padding: 8% 10%;
+.about {
+    padding: 5% 10%;
     /* background-color: #364FA1; */
     display: flex;
-
+    align-items: center;
 }
 
-.about,
-.about_img {
+.about-content h1 {
+    padding: 5% 0;
+    font-size: 40px;
+    color: var(--light-clue);
+}
+
+
+.about-content,
+.about image {
     flex-basis: 50%;
+    margin: 0 1%;
+
+
 }
+
+/*------Service-------*/
 
 .all_service {
     padding: 2% 5%;
@@ -194,20 +204,29 @@ header {
     text-align: center;
 }
 
+
+/*-------Contact--------*/
+
 .contact {
-    background: green;
+    background-image: url("src/orion/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffff;
+    transform: scale(1);
 }
 
 .continor2 {
-    padding: 50px 80px;
+    align-content: center;
+    width: 50%;
 
 }
 
 .row {
     display: flex;
     padding: 30px 60px;
-    background-color: #364fa154;
+    margin: 10% auto;
+    background-color: #ffffff85;
     border-radius: 15px;
 
 }
@@ -239,6 +258,9 @@ form textarea {
     margin: 15px 0;
     color: white;
 }
+
+
+
 
 footer {
     background: #000;
