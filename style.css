@@ -290,13 +290,16 @@ header {
     background-size: cover;
     display: flex;
     justify-content: center;
+
 }
 
 
 .contact-continor {
     background-image: linear-gradient(to top, #eef1f536 0%, #eef1f536 100%);
+    backdrop-filter: blur(4px);
     margin: 5% 0;
     border-radius: 15px;
+
 }
 
 .row {
