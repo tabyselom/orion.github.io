@@ -11,10 +11,11 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/3ac3d49da2.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
 </head>
 
 <body>
-    <section class="hero">
+    <section id="hero" class="hidden">
         <div class="bg-img"></div>
         <div class="hero_continor" style="height: 100vh; padding: 0 3%; box-shadow: 1px 1px 79px 68px rgba(0,0,0,0.74) inset;
         -webkit-box-shadow: 1px 1px 79px 68px rgba(0,0,0,0.74) inset;
@@ -31,25 +32,25 @@
                 <img src="src/orion/Orion manW.svg" class="logo" alt="logo">
                 <nav>
                     <ul class="nav_link">
-                        <li style="--i:1"> <a href="#"> About Us</a></li>
-                        <li style="--i:2"> <a href="#">Service</a></li>
-                        <li style="--i:3"> <a href="#">Projct</a></li>
+                        <li style="--i:1"> <a href="#about"> About Us</a></li>
+                        <li style="--i:2"> <a href="#service">Service</a></li>
+                        <li style="--i:3"> <a href="#">Project</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="btn">Contact Us</a>
+                <a href="#contact" class="btn">Contact Us</a>
             </header>
             <section class="home">
                 <div class="home-content">
                     <h1 style="--i:1">ORION</h1>
                     <h2 style="--i:2">Communication And Events </h2>
-                    <button class="btn2">About us ...</button>
+                    <button class="btn2"><a style="color: white;" href="#about">About us ... </a></button>
                 </div>
             </section>
         </div>
 
     </section>
 
-    <section class="service">
+    <section id="service" class="hidden">
         <div class="service_containt">
             <h1>Our services</h1>
             <div class="service_lists">
@@ -89,7 +90,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="hidden">
 
         <div class="about-content">
             <h1>Who we are</h1>
@@ -103,7 +104,7 @@
     </section>
 
 
-    <section class="contact">
+    <section id="contact" class="hidden">
         <div class="contact-continor">
             <div class="row">
                 <div class="content-left">
@@ -120,19 +121,23 @@
                     </div>
                 </div>
                 <div class="content-right">
-                    <form action="">
-                        <input type="text" placeholder="Name....">
-                        <input type="email" placeholder="email...">
-                        <textarea name="message" rows="6" placeholder="message..."></textarea>
+                    <!-- <form action="">
+                        <input type="text" name="Name" placeholder="Name...." required>
+                        <input type="email" name="Email" placeholder="email..." required>
+                        <textarea name="message" name="Message" rows="6" placeholder="message..." required></textarea>
                         <input style="    width: 30%;
                         margin-left: 20%;" class="btn" type="submit">
-                    </form>
+                    </form> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1418.3334269453806!2d38.76461303264745!3d8.989701798839198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b844f0a1bcadd%3A0x323b36f630c5308b!2zQ2VudHJhbCBQcmludGluZyBQcmVzcyB8IE1lc2tlbCBGbG93ZXIgfCDhiLThipXhibXhiKvhiI0g4Yib4Ymw4Yia4YurIOGJpOGJtSB8IOGImOGIteGJgOGIjSDhjY3hiIvhi4jhiK0!5e0!3m2!1sen!2set!4v1693674543841!5m2!1sen!2set"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>2023.Orion Events</footer>
+    <footer class="hidden">2023.Orion Events</footer>
 </body>
 
 </html>

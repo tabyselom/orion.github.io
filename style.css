@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*---hero background and stares ----- */
 
@@ -28,6 +32,7 @@
     right: 0;
     bottom: 0;
     z-index: -5;
+    width: 100%;
 }
 
 .stare1 {
@@ -42,7 +47,7 @@
 
 
 
-.hero {
+#hero {
     height: 100vh;
 }
 
@@ -162,7 +167,7 @@ header {
 
 
 /*-----About------*/
-.about {
+#about {
     padding: 5% 10%;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     display: flex;
@@ -177,39 +182,9 @@ header {
 
 
 .about-content,
-.about image {
+#about image {
     flex-basis: 50%;
     margin: 0 5%;
-
-}
-
-.vizion {
-
-    background-image: url('src/orion/bg/Deep\ Space\ Backgrounds\ on\ Yellow\ Images\ Creative\ Store.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.c {
-    display: flex;
-    align-items: center;
-    padding: 5% 10%;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.vizion-content h1 {
-    padding: 5% 0;
-    font-size: 40px;
-    color: var(--light-clue);
-    text-align: center;
-}
-
-.vizion-content {
-    flex-basis: 50%;
-    margin: 0 5%;
-    text-align: center;
 
 }
 
@@ -283,7 +258,7 @@ header {
 
 /*-------Contact--------*/
 
-.contact {
+#contact {
     background-image: url("src/orion/bg/paul-volkmer-qVotvbsuM_c-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -357,6 +332,10 @@ header {
     flex-basis: 60%;
     margin: 3% 30px;
 
+}
+
+iframe {
+    border-radius: 10px;
 }
 
 
@@ -465,6 +444,125 @@ footer {
     90% {
         transform: rotate(180deg);
         opacity: 1;
+    }
+
+}
+
+.hidden {
+    opacity: 0.5;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+    filter: blur(0);
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    header {
+        display: flex;
+        padding: 0px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .home-content h2 {
+        font-size: 30px;
+    }
+
+    #service h1 {
+        font-size: 40px;
+    }
+
+    .service_containt {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .service_containt h1 {
+        padding: 20px 0;
+        font-size: 10px;
+        color: var(--light-clue);
+
+    }
+
+    .service_lists {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_containt h1 {
+        padding: 40px 0;
+        font-size: 40px;
+        color: var(--light-clue);
+
+    }
+
+    .service_lists {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service_card {
+
+        width: fit-content;
+        margin: 20px 30px;
+        position: relative;
+        background-color: #222124;
+        border-radius: 15px;
+
+    }
+
+    .service_img {
+        font-size: 80px;
+        padding: 50px;
+        transition: all 0.5s;
+        opacity: 1;
+        color: white;
+
+    }
+
+
+    .service_card {
+
+        width: fit-content;
+        margin: 10px;
+        position: relative;
+        background-color: #222124;
+        border-radius: 15px;
+    }
+
+    .service_img {
+        font-size: 33px;
+        padding: 80px 50px;
+        transition: all 0.5s;
+        opacity: 1;
+        color: white;
+
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    #about {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about img {
+        padding-top: 20px;
+        width: 80%;
     }
 
 }
