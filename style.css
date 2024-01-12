@@ -189,11 +189,67 @@ header {
     animation: slideTop 2s ease forwards;
 }
 
+
+
+/*-----New------*/
+
+#new {
+    padding: 5% 8%;
+    background-image: linear-gradient(240deg, #ffffff 5%, #ebedee 100%);
+    display: flex;
+    align-items: center;
+
+}
+
+.new-left,
+.new-right {
+    flex-basis: 50%;
+}
+
+.new-left {
+    font-size: 4rem;
+
+}
+
+.new-left h1 {
+    transition: all 0.3s ease 0s;
+}
+
+.new-left h1:hover {
+    scale: 1.2;
+}
+
+.new-right p {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    font-weight: 500;
+
+}
+
+.new-right li {
+    font-size: 1.9rem;
+    list-style: none;
+    margin-top: 15px;
+    transition: all 0.5s ease 0s;
+
+}
+
+.new-right li b {
+    font-size: 2rem;
+    color: var(--light-clue);
+
+}
+
+.new-right li:hover {
+    scale: 1.1;
+}
+
 /*------Service-------*/
 
 .service_containt {
     text-align: center;
     padding-bottom: 70px;
+
 }
 
 .service_containt h1 {
@@ -217,9 +273,14 @@ header {
 
 }
 
+.service_img img {
+    width: 160px;
+    height: auto;
+}
+
 .service_img {
     font-size: 7rem;
-    padding: 186px 112px;
+    padding: 140px 90px;
     width: 50%;
     transition: all 0.5s;
     opacity: 1;
@@ -257,11 +318,15 @@ header {
     opacity: 0;
 }
 
+/* .service_desc p {
+    text-align: justify;
+} */
 
 /*-----About------*/
 #about {
     padding: 5% 10%;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(240deg, #ffffff 5%, #ebedee 100%);
+    /* background-color: rgb(243, 243, 243); */
     display: flex;
     align-items: center;
     font-size: 1.6rem;
@@ -279,6 +344,81 @@ header {
     flex-basis: 50%;
     margin: 0 5%;
 
+}
+
+.dynamic-text {
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.wrap {
+    display: inline-flex;
+}
+
+.dynamic-text li {
+
+    color: var(--light-clue);
+    list-style: none;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    top: 0;
+    animation: slides 5.5s steps(2) infinite;
+}
+
+@keyframes slides {
+    100% {
+        top: -120px
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+}
+
+.dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    border-left: 10px solid var(--light-clue);
+    animation: typing 3s steps(25) infinite,
+        cursor .5s step-end infinite alternate;
+}
+
+
+
+@keyframes typing {
+
+    90%,
+    100% {
+        width: 0%;
+    }
+
+    45%,
+    55% {
+        width: 100%;
+    }
+
+    0%,
+    10% {
+        width: 0%;
+    }
+
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    margin-top: 10px;
+    text-align: justify;
 }
 
 
